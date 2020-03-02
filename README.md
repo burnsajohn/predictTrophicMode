@@ -4,7 +4,7 @@ Trophic Mode Prediction Tool, (c) John A. Burns, 2017
 
 This tool runs in R, using the rscript command line tool, which should be platform independent.
 
-##################################################################################################
+###########################################################################################
 Dependencies:
 To run this tool in default mode, matching the analysis done in the corresponding manuscript, you must install the following packages in your R distribution:
 
@@ -29,7 +29,7 @@ topGO
 plyr
 Boruta
 
-########################################################################################################
+#################################################################################################
 #
 #Usage:
 #
