@@ -12,9 +12,7 @@ gplots, ggplot2, ggrepel, matrixStats, RColorBrewer, randomForest, rlist, optpar
 
 To run this tool in advanced mode, with additional functionality for comparing between any two groups and limiting the analysis to the proteins in your favorite genome/s, you must install the following additional packages in your R distribution:
 
-topGO
-plyr
-Boruta
+topGO, plyr, Boruta
 
 #################################################################################################
 #
