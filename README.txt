@@ -31,7 +31,7 @@ Boruta
 #
 #Usage:
 #
-#For either mode, the first step is to search the ~14k HMMs against the proteins from your genome or transcriptome. The HMMs included with the model (the file with all 14k HMMs can be downloaded here: "https://figshare.com/articles/DiverseGenome-AllvAll-cluster_HMMs/5285818". Unzip the file "phag_nonphag-allVall-any3diverse.hmmCAT.hmm.gz" and run hmmsearch as follows.) will only work with proteins. The script expects a list of models that have a significant hit (evalue<=1e-5) to some protein in your genome/transcriptomes of interest. To get such a list, run the following commands on a compter/server with HMMER3 installed.
+#For either mode, the first step is to search the ~14k HMMs against the proteins from your genome or transcriptome. The 14k+ HMMs defining the proteins in the moodel can be downloaded here: "https://figshare.com/articles/DiverseGenome-AllvAll-cluster_HMMs/5285818". Unzip the file "phag_nonphag-allVall-any3diverse.hmmCAT.hmm.gz" and run hmmsearch as follows. Will only work with proteins. The script expects a list of models that have a significant hit (evalue<=1e-5) to some protein in your genome/transcriptomes of interest. To get such a list, run the following commands on a computer/server with HMMER3 installed.
 #
 #define files, names
 	
@@ -43,9 +43,7 @@ Boruta
 #
 	hmmsearch --tblout $species.x.phag_nonphag-allVall-any3diverse.hmmsearchOUT-tbl.txt --cpu 8 $HMMs $filename
 #
-#filter for significant hits (evalue <= 1e-5) *evalue threshold used to generate the model was <=1e-5, must use same threshold here. If you would like to experiment with changing that threshold, you must rebuild the presense absence matrix by re-thresholding all of the default organisms. To do so, run hmmsearch against all of those genomes, or contact the author for the raw hmmsearch output files. 
-#
-	
+#filter for significant hits (full sequence evalue <= 1e-5, any domain evalue <=1e-4) *evalue threshold used to generate the model: full sequence evalue <= 1e-5, any domain evalue <=1e-4. For predictions to be accurate, must use same threshold here. If you would like to experiment with changing that threshold, you must rebuild the presense absence matrix by re-thresholding all of the default organisms. To do so, run hmmsearch against all of those genomes, or contact the author for the raw hmmsearch output files. 
 #
 #the following commands can be used to get the list of signifcant hits in the correct format for the prediction tool (in BASH):
 #
