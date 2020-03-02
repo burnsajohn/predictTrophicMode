@@ -31,7 +31,7 @@ Boruta
 #
 #Usage:
 #
-#For either mode, the first step is to search the ~14k HMMs against the proteins from your genome or transcriptome. The HMMs included with the model (the file with all 14k HMMs is here: "TrophicModePredictionTool/HMMs/phag_nonphag-allVall-any3diverse.hmmCAT.hmm") will only work with proteins. The script expects a list of models that have a significant hit (evalue<=1e-5) to some protein in your genome/transcriptomes of interest. To get such a list, run the following commands on a compter/server with HMMER3 installed.
+#For either mode, the first step is to search the ~14k HMMs against the proteins from your genome or transcriptome. The HMMs included with the model (the file with all 14k HMMs can be downloaded here: "https://figshare.com/articles/DiverseGenome-AllvAll-cluster_HMMs/5285818". Unzip the file "phag_nonphag-allVall-any3diverse.hmmCAT.hmm.gz" and run hmmsearch as follows.) will only work with proteins. The script expects a list of models that have a significant hit (evalue<=1e-5) to some protein in your genome/transcriptomes of interest. To get such a list, run the following commands on a compter/server with HMMER3 installed.
 #
 #define files, names
 	
