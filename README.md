@@ -8,20 +8,7 @@ This tool runs in R, using the rscript command line tool, which should be platfo
 Dependencies:
 To run this tool in default mode, matching the analysis done in the corresponding manuscript, you must install the following packages in your R distribution:
 
-gplots
-ggplot2
-ggrepel
-matrixStats
-RColorBrewer
-randomForest
-rlist
-optparse
-pnn
-basicPlotteR
-pavo
-concaveman
-mapproj
-purrr
+gplots, ggplot2, ggrepel, matrixStats, RColorBrewer, randomForest, rlist, optparse, pnn, basicPlotteR, pavo, concaveman, mapproj, purrr
 
 To run this tool in advanced mode, with additional functionality for comparing between any two groups and limiting the analysis to the proteins in your favorite genome/s, you must install the following additional packages in your R distribution:
 
