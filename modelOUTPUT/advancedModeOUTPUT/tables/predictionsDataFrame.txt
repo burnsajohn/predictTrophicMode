@@ -1,0 +1,7 @@
+Species prediction probability
+Entamoeba_histolytica Gr1 prediction 7.87993736230462e-07
+mantamonad_sp Gr1 prediction 0.000377784750292926
+Phaeodactylum_tricornutum Gr1 prediction 1.51688759076011e-06
+Plasmodium_falciparum Gr1 prediction 2.67656751500357e-08
+R. allomycis Gr1 prediction 0.793991854404732
+Trichomonas_vaginalis Gr1 prediction 7.81820933604709e-06

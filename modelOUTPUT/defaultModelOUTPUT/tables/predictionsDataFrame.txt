@@ -1,0 +1,10 @@
+Species	prediction	probability
+Dinobryon_sp_LO226KS_TRX	Phagocytosis prediction	0.98419106791605
+mantamonad_sp	Phagocytosis prediction	0.999972467684023
+Phaeodactylum_tricornutum	Phagocytosis prediction	0.00207165798472376
+Dinobryon_sp_LO226KS_TRX	Prototrophy prediction	0.973497015146894
+mantamonad_sp	Prototrophy prediction	0.0292836974280782
+Phaeodactylum_tricornutum	Prototrophy prediction	0.962665699696258
+Dinobryon_sp_LO226KS_TRX	Photosynthesis prediction	0.982199468426044
+mantamonad_sp	Photosynthesis prediction	0.000616877419884606
+Phaeodactylum_tricornutum	Photosynthesis prediction	0.97790177566709
