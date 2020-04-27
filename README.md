@@ -31,7 +31,7 @@ filter for significant hits (full sequence evalue <= 1e-5, any domain evalue <=1
 
    
 
-the following commands can be used to get the list of signifcant hits in the correct format for the prediction tool (in BASH):
+the following commands can be used to get the list of signifcant hits in the correct format for the prediction tool (in BASH). The output files with the format "species_sigModels.txt" should contain a list of HMM names that are significant hits to at least 1 protein in your target genome:
 
     sigfile=${species}_sigHits.txt
     sigModel=${sigfile//_sigHits.txt/_sigModels.txt}
@@ -40,7 +40,6 @@ the following commands can be used to get the list of signifcant hits in the cor
     grep -v "^#" $species.x.phag_nonphag-allVall-any3diverse.hmmsearchOUT-tbl.txt | awk '$5<=1e-5 && $8<=1e-4' > $sigfile
     awk '{print $3}' $sigfile | sort -u > $sigModel
 
-the file with the format "species_sigModels.txt" should contain a list of HMM names that are significant hits to at least 1 protein in your target genome.
 ---
 Place the file/s containing the list of significant HMMs into the directory "TrophicModePredictionTool/TestGenomes"
 
